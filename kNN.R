@@ -10,12 +10,7 @@ pred <- knn_forecasting(ts(df$`Meningoccocal Disease`, frequency = 52),
 
 ro <- rolling_origin(pred, h = 1, rolling = FALSE)
 
-print(ro$test_sets)
-print(ro$predictions)
-print(ro$errors)
-
-ro$global_accu
-
 plot(ro)
+
 
    
